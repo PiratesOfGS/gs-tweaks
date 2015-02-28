@@ -21,7 +21,7 @@ setInterval(function () {
 var mybt = d.createElement('a');
 mybt.setAttribute('id', _chatButtonId);
 mybt.setAttribute('class', 'btn btn-medium btn-success');
-mybt.setAttribute('title', 'https://naugtur.github.io/gs-is-for-chat/');
+mybt.setAttribute('title', 'http://piratesofgs.github.io/gs-tweaks/');
 mybt.innerHTML = 'Chat';
 mybt.addEventListener('click', function () {
     d.body.classList.toggle('naugtur');
