@@ -1,0 +1,40 @@
+@chatwidth: 444px;
+@chatplussidebar: (@chatwidth + 250);
+.naugtur #container.broadcast {
+    padding-right: @chatwidth;
+}
+
+.naugtur #chat-sidebar,
+.naugtur .chat .msgs {
+    width: @chatwidth;
+    display: block !important;
+}
+
+@media (max-width: @chatplussidebar) {
+    .naugtur #container.broadcast {
+        padding-right: 100%;
+    }
+    .naugtur #chat-sidebar,
+    .naugtur .chat .msgs {
+        width: 100%;
+    }
+}
+
+//button
+#naugtur-chat-button {
+    position: fixed;
+    top: 8px;
+    right: 50px;
+    z-index: 50000;
+}
+
+//chat autojoiner
+.naugtur .chat-form.hide {
+    display: block !important;
+}
+
+.naugtur .placeholder-text,
+.naugtur .msgs .overlay,
+.naugtur .chat-disabled-btns {
+    display: none;
+}
