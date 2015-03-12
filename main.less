@@ -24,7 +24,7 @@
 #naugtur-chat-button {
     position: fixed;
     top: 8px;
-    right: 50px;
+    right: 30px;
     z-index: 50000;
 }
 
@@ -35,6 +35,29 @@
 
 .naugtur .placeholder-text,
 .naugtur .msgs .overlay,
-.naugtur .chat-disabled-btns {
+.naugtur .chat-disabled-btns,
+.inviteUserFollowers,
+.welcomeMessage {
     display: none;
+}
+
+.naugtur .chat-activity {
+    padding: 7px 10px;
+}
+
+.naugtur .chat-activity .inner {
+    line-height: 10px;
+}
+
+.naugtur .chat-activity .message,
+.naugtur .chat-activity .username {
+    font-size: 11px;
+}
+
+.naugtur .chat-activity .timestamp {
+    font-size: 9px;
+}
+
+.naugtur .chat.chat-joined .msgs-container {
+    border-left: 1px solid #dddfe4;
 }
